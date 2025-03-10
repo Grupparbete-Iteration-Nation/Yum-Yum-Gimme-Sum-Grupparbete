@@ -4,6 +4,45 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+body {
+    background-color: #F5E3C4;
+}
+
+.röd {
+
+    height: 40rem;
+}
+
+/* Navigeringsmeny */
+
+.nav {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__Btn a {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #747474;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav__cart {
+    position: relative;
+    top: -17px;
+}
+
+.fa-solid {
+    font-size: 1.5rem;
+    color: #747474;
 }
