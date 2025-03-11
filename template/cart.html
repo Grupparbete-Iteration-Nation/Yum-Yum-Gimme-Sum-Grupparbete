@@ -1,13 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script type="module" src="scripts/script.js"></script>
+    <title>Kundvagn - Yum Yum Gimmie Sum</title>
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Cart</h1>
+
+    <section class="cart-header">
+        <div class="cart-header__background">
+            <h1 class="cart-header__rubrik">BESTÄLLNING</h1>
+            <div class="cart-header__filter">
+                <a href="#">Wontons</a>
+                <a href="#">Dip</a>
+                <a href="#">Dryck</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <main class="cart-container">
+        <div class="cart-item">
+            <div class="item-info">
+                <h2>KARLSTAD</h2>
+                <p>En god friterad wonton med smaker från de värmländska skogarna.</p>
+                <div class="item-quantity">
+                    <button class="minus">➖</button>
+                    <span>2</span>
+                    <button class="plus">➕</button>
+                </div>
+            </div>
+            <div class="item-price">9 SEK</div>
+        </div>
+    
+        <div class="cart-total">
+            <p>TOTALT</p>
+            <h2>139,00 SEK</h2>
+            <p>(inkl. moms och avgifter)</p>
+        </div>
+    </main>
+
+        <button class="checkout-btn">Slutför köp</button>
+    </main>
+
+
 </body>
 </html>
