@@ -1,9 +1,137 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  padding-top: 20px;
+  background-color: #f5e3c4;
+  background-image: url("../assets/images/Monster_YYGS.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.logo {
+  display: block;
+  max-width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.main-container {
+  width: 85%;
+  max-width: 500px;
+}
+
+.map-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #df4a4a;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 100px 474px 0px 474px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+  margin-bottom: -20px;
+}
+
+.map-heading {
+  font-family: Bagel Fat One;
+  text-shadow: 1px 1px 2px black;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+.map-frame {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.map-frame iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.future-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #df4a4a;
+  padding: 15px;
+  margin: 15px 0px 15px;
+  border-radius: 100px 474px 0px 474px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.future-heading {
+  font-family: Bagel Fat One;
+  text-shadow: 1px 1px 2px black;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+.location-list {
+  font-family: Roboto;
+}
+
+.location-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  gap: 15px;
+}
+
+.location-pin {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.location-info {
+  flex: 1;
+  color: #575757;
+}
+
+.weekday {
+  color: #575757;
+}
+
+.location-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.card-button {
+  background-color: #49938f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.card-button:hover {
+  background-color: #327c78;
 }
