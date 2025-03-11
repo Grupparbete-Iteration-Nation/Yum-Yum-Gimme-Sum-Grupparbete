@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /* Globalt */
 
 body {
@@ -29,6 +30,64 @@ header {
     border-radius: 10px 40px 10px 10px;
     display: flex;
     flex-direction: column;
+
+feature-navigeringsmeny
+body {
+    background-color: #F5E3C4;
+}
+
+/* Navigeringsmeny */
+
+.nav {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__Btn a {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #747474;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav__cart {
+    position: relative;
+    top: -17px;
+}
+
+.fa-solid {
+    font-size: 1.5rem;
+  color: #747474;}
+
+h1 {
+    color: red;
+}
+
+body {
+    background-color: #F5E3C4;
+    background-image: url(/template/images/Mönster\ YYGS-opacitet.png);
+    padding:20px;
+    height:100vh;
+}
+
+a {
+    cursor: pointer;
+}
+
+.header {
+    text-align:center;
+    display: flex;
+
     justify-content: center;
     align-items: center;
 }
@@ -64,5 +123,119 @@ header {
 
 .presentation__img {
     width: 100%;
+}
+
+
+.logoimg {
+    height:50px;
+    display:flex;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.menu-heading {
+    background: #DF4A4A;
+    border-radius: 20px 100px 20px 100px;
+    text-align: center;
+    padding: 20px;
+    z-index: 300;
+    position: relative;
+}
+
+.menu-heading h1 {
+    color: white;
+    font-family: 'Bagel Fat One';
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.menu-bg {
+    background: #49938F;
+    border-radius: 20px 100px 20px 50px;
+    z-index: 100;
+    position: relative;
+}
+
+.sub-menu {
+    display:flex;
+    justify-content:space-around;
+    align-items: space-around;
+    padding: 20px;
+    font-family: 'roboto';
+    color: white;
+    font-size: 24px;
+}
+
+.sub-menu a {
+    text-decoration: none;
+    color:white;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 100px 20px 20px 20px;
+    top:-50px;
+    position: relative;
+    height: calc(100vh - 35%);
+    overflow-y: scroll;
+    z-index: 0;
+}
+
+.main-content {
+    overflow-y: scroll;
+}
+
+.menu-section {
+    font-family: 'Roboto';
+    color: #49938F;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.menu-item {
+    display:flex;
+    font-family: 'Roboto';
+    justify-content: space-between;
+}
+
+.menu-item h3{
+    font-size: 22px;
+    color: #575757;
+}
+
+.menu-add {
+    display:flex;
+    margin-top:5px;
+    margin-bottom:20px;
+}
+
+.menu-add p {
+    font-size:18px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+.name-ingredients {
+    width: 80%;
+}
+
+.price {
+    font-size:22px;
+}
+
+.checkout-btn {
+    width:100%;
+    font-family: 'Ubuntu Mono';
+    font-size: 18px;
+    border:none;
+    background: #DF4A4A;
+    padding: 20px;
+    top:-30px;
+    position: relative;
+    color:white;
+    font-weight: 600;
+    border-radius: 20px 100px 20px 100px;
+    text-transform: uppercase;
+
 }
 
