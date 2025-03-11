@@ -1,0 +1,45 @@
+/* Om oss */
+
+.presentation {
+    background-color: #D7C7B8;
+    margin: 1rem;
+    border-radius: 10px 40px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.presentation__rubrik {
+    width: 100%;
+    height: 4rem;
+    background-color: #DF4A4A;
+    color: #fff;
+    font-family: "Bagel Fat One", system-ui;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 40px 5px 40px;
+}
+
+.presentation__brödtext {
+    padding: 1.2rem;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.presentation__brödtext--bakgrundsfärg {
+    background-color: #FDF8F0;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.presentation__brödtext--fet {
+    font-weight: 800;
+}
+
+.presentation__img {
+    width: 100%;
+}
