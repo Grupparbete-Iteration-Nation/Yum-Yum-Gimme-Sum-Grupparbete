@@ -9,12 +9,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
-  padding-top: 21px;
+  min-height: 100vh;
+  height: auto;
+  overflow: auto;
+  overflow-y: auto;
+  padding-top: 20px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .find__logo {
@@ -27,6 +29,7 @@
 .find__main-container {
   width: 85%;
   max-width: 500px;
+  margin: 0 auto;
 }
 
 /* Map section */
@@ -41,7 +44,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 2;
-  margin-bottom: -20px;
+  margin-bottom: 0px;
 }
 
 .find__map-heading {
@@ -83,6 +86,7 @@
 
 .find__location-list {
   font-family: Roboto;
+  margin-bottom: 150px;
 }
 
 .find__location-card {
@@ -125,7 +129,7 @@
   background-color: #49938f;
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 10px 15px;
   cursor: pointer;
   border-radius: 4px;
   font-size: 14px;
