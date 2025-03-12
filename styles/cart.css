@@ -32,18 +32,18 @@ body {
 }
 
 .cart-sub-menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display:flex;
+    justify-content:space-around;
+    align-items: space-around;
     padding: 20px;
-    font-family: 'Roboto';
+    font-family: 'roboto';
     color: white;
     font-size: 24px;
 }
 
 .cart-sub-menu a {
     text-decoration: none;
-    color: white;
+    color:white;
 }
 
 .cart-sub-menu a:hover {
@@ -69,8 +69,18 @@ body {
     padding: 15px 0;
     border-bottom: 1px solid #ccc;
     width: 100%;
+    font-family: 'Roboto';
 }
 
+.cart-item h3 {
+    color: #575757;
+    text-transform: uppercase;
+}
+
+.to-pay {
+    display:flex;
+    justify-content: space-between;
+}
 
 .item-info {
     display: flex;
@@ -124,17 +134,24 @@ body {
 }
 
 .checkout-btn {
-    display: block;
-    width: 80%;
-    background-color: black;
-    color: white;
-    padding: 15px;
+    width:90%;
+    font-family: 'Ubuntu Mono';
     font-size: 18px;
-    border: none;
-    border-radius: 10px;
+    border:none;
+    background: black;
+    padding: 20px;
+    top:-30px;
+    position: relative;
+    color:white;
+    font-weight: 600;
+    border-radius: 20px 100px 20px 100px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
     cursor: pointer;
-    font-weight: bold;
-    margin: 20px auto;
+    text-decoration: none;
 }
 
 .checkout-btn:hover {

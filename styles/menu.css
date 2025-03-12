@@ -149,6 +149,7 @@ margin-anchor {
     margin: 0 auto;
     display: flex;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .checkout-btn:hover {
