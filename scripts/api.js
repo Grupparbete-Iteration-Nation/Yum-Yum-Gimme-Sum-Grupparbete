@@ -101,28 +101,28 @@ async function getProducts() {
                 console.error("Data format is incorrect or missing 'items' key.");
             }
 
+
+    // Skapa en objekt för att hålla reda på räknarna
+    const productCounts = {};
+
     // Lägg till event listeners för att uppdatera siffran för varje produkt
     const addButtons = document.querySelectorAll('.add-to-cart');
     const removeButtons = document.querySelectorAll('.remove-from-cart');
     const numberDisplays = document.querySelectorAll('.add-number');
 
-    let count = 0; 
-
     addButtons.forEach((button, index) => {
-        
+        productCounts[index] = 0; // Initiera räknaren för varje produkt
         button.addEventListener('click', () => {
-            count++;  // Öka räknaren
-            numberDisplays[index].textContent = count;  // Uppdatera siffran
+            productCounts[index]++;  // Öka räknaren för denna produkt
+            numberDisplays[index].textContent = productCounts[index];  // Uppdatera siffran för denna produkt
         });
     });
 
     removeButtons.forEach((button, index) => {
-
         button.addEventListener('click', () => {
-{               if (count > 0) {
-                count--;  // Minska räknaren om det finns något att ta bort
-                numberDisplays[index].textContent = count;  // Uppdatera siffran
-            }
+            if (productCounts[index] > 0) {
+                productCounts[index]--;  // Minska räknaren för denna produkt
+                numberDisplays[index].textContent = productCounts[index];  // Uppdatera siffran för denna produkt
             }
         });
     });
