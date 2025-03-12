@@ -59,3 +59,11 @@ header {
     font-size: 1.5rem;
     color: #747474;
 }
+
+.nav a.active .fa-solid {
+    color: #DF4A4A;
+  }
+
+.nav a.active {
+    color: #DF4A4A;
+}
