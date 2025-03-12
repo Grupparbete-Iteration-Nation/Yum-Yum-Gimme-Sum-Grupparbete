@@ -22,9 +22,9 @@ async function getProducts() {
                     <h3 class="name-item">${item.name}</h3>
                     <p>${item.description}</p>
                     <div class="menu-add">
-                    <img src="/assets/images/ta bort meny.png" alt="">
+                    <img src="/assets/images/ta bort meny.png" alt="remove" class="remove-from-cart">
                     <p class="add-number">0</p>
-                    <img src="/assets/images/lägg till meny.png" alt="">
+                    <img src="/assets/images/lägg till meny.png" alt="add" class="add-to-cart">
                 </div>
                 </div>
                 <div class="price"><h3>9 SEK</h3></div>
@@ -53,9 +53,9 @@ async function getProducts() {
                     <h3 class="name-item">${item.name}</h3>
                     <p>${item.description}</p>
                     <div class="menu-add">
-                    <img src="/assets/images/ta bort meny.png" alt="">
+                    <img src="/assets/images/ta bort meny.png" alt="remove" class="remove-from-cart">
                     <p class="add-number">0</p>
-                    <img src="/assets/images/lägg till meny.png" alt="">
+                    <img src="/assets/images/lägg till meny.png" alt="add" class="add-to-cart">
                 </div>
                 </div>
                 <div class="price"><h3>9 SEK</h3></div>
@@ -84,9 +84,9 @@ async function getProducts() {
                             <h3 class="name-item">${item.name}</h3>
                             <p>${item.description}</p>
                             <div class="menu-add">
-                            <img src="/assets/images/ta bort meny.png" alt="">
+                            <img src="/assets/images/ta bort meny.png" alt="remove" class="remove-from-cart">
                             <p class="add-number">0</p>
-                            <img src="/assets/images/lägg till meny.png" alt="">
+                            <img src="/assets/images/lägg till meny.png" alt="add" class="add-to-cart">
                         </div>
                         </div>
                         <div class="price"><h3>9 SEK</h3></div>
@@ -100,6 +100,34 @@ async function getProducts() {
             } else {
                 console.error("Data format is incorrect or missing 'items' key.");
             }
+
+    // Lägg till event listeners för att uppdatera siffran för varje produkt
+    const addButtons = document.querySelectorAll('.add-to-cart');
+    const removeButtons = document.querySelectorAll('.remove-from-cart');
+    const numberDisplays = document.querySelectorAll('.add-number');
+
+    let count = 0; 
+
+    addButtons.forEach((button, index) => {
+        
+        button.addEventListener('click', () => {
+            count++;  // Öka räknaren
+            numberDisplays[index].textContent = count;  // Uppdatera siffran
+        });
+    });
+
+    removeButtons.forEach((button, index) => {
+
+        button.addEventListener('click', () => {
+{               if (count > 0) {
+                count--;  // Minska räknaren om det finns något att ta bort
+                numberDisplays[index].textContent = count;  // Uppdatera siffran
+            }
+            }
+        });
+    });
 }
 
+
 getProducts();
+
