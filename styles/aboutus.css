@@ -43,3 +43,15 @@
 .presentation__img {
     width: 100%;
 }
+
+.order-btn {
+    background: #49938F;
+    color: white;
+}
+
+
+.buttons a button:focus, 
+.buttons a button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
