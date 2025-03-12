@@ -42,8 +42,8 @@
 main {
     background: rgba(255, 255, 255, 0.75);
     padding: 100px 20px 20px 20px;
-    top:-50px;
     position: relative;
+    top:-50px;
     height: calc(100vh - 400px);
     overflow-y: scroll;
     z-index: 0;
@@ -73,10 +73,47 @@ main {
     color: #575757;
 }
 
+.name-item {
+    font-size: 22px;
+    color: #575757;
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.price-item {
+    font-size: 22px;
+    color: #575757;
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.item-description {
+    font-family: Roboto;
+    color: #575757;
+}
+
+margin-anchor {
+    margin-bottom:20px;
+}
+
+#wontons {
+    scroll-margin-top: 100px;
+}
+
+#dip {
+    scroll-margin-top: 100px;
+}
+
+#dryck {
+    scroll-margin-top: 100px;
+}
+
 .menu-add {
     display:flex;
     margin-top:5px;
-    margin-bottom:20px;
 }
 
 .menu-add p {
