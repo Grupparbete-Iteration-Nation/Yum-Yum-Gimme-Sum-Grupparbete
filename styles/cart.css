@@ -10,7 +10,7 @@ body {
     background: #DF4A4A;
     border-radius: 20px 100px 20px 100px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     z-index: 300;
     position: relative;
 }
@@ -35,7 +35,7 @@ body {
     display:flex;
     justify-content:space-around;
     align-items: space-around;
-    padding: 20px;
+    padding: 10px;
     font-family: 'roboto';
     color: white;
     font-size: 24px;
@@ -140,7 +140,7 @@ body {
     border:none;
     background: black;
     padding: 20px;
-    top:-30px;
+    top:-50px;
     position: relative;
     color:white;
     font-weight: 600;

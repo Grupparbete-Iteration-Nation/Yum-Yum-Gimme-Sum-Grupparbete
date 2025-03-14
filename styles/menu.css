@@ -4,7 +4,7 @@
     background: #DF4A4A;
     border-radius: 20px 100px 20px 100px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     z-index: 300;
     position: relative;
 }
@@ -28,7 +28,7 @@
     display:flex;
     justify-content:space-around;
     align-items: space-around;
-    padding: 20px;
+    padding: 10px;
     font-family: 'roboto';
     color: white;
     font-size: 24px;
@@ -138,7 +138,7 @@ margin-anchor {
     border:none;
     background: #DF4A4A;
     padding: 20px;
-    top:-30px;
+    top:-40px;
     position: relative;
     color:white;
     font-weight: 600;
