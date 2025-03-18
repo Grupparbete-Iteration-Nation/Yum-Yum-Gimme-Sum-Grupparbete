@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.find__body {
+/* .find__body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -18,7 +18,7 @@
   background-position: center center;
   background-size: cover;
 }
-
+ */
 .find__logo {
   display: block;
   max-width: 50px;
@@ -49,9 +49,9 @@
 
 .find__map-heading {
   font-family: Bagel Fat One;
-  text-shadow: 1px 1px 2px black;
   color: #ffffff;
   font-size: 1.5em;
+  letter-spacing: 2px;
 }
 
 .find__map-outline {
@@ -89,13 +89,12 @@
 
 .find__future-heading {
   font-family: Bagel Fat One;
-  text-shadow: 1px 1px 2px black;
   color: #ffffff;
   font-size: 1.5em;
+  letter-spacing: 2px;
 }
 
 .find__location-list {
-  font-family: Roboto;
   margin-bottom: 150px;
 }
 
@@ -103,6 +102,7 @@
   display: flex;
   align-items: center;
   background: white;
+  font-family: Roboto;
   padding: 15px;
   margin-top: 15px;
   border-radius: 8px;
@@ -144,6 +144,7 @@
   border-radius: 4px;
   font-size: 14px;
   transition: 0.3s;
+  text-wrap: nowrap;
 }
 
 .find__card-button:hover {
