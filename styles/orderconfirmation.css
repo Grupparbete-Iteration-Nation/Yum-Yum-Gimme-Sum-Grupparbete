@@ -43,11 +43,50 @@ main {
     align-items: center;
 }
 
-/* Kvitto */
-
+/* 📦 Vit Box för Produkter */
 .cart-container {
     background: white;
-   /* padding: 20px; */
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
+}
+
+/* 🛒 Varje Produkt i Kundvagnen */
+.cart-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 40px;
+    padding: 12px;
+    border-bottom: 1px solid #8f8f8f;
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    margin-bottom: 10px;
+    
+}
+
+/* 💰 Pris & Antal - Justering */
+.item-price {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.item-quantity {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    text-align: right;
+}
+
+/* Kvitto */
+
+/*
+.cart-container {
+    background: white;
     padding: 1.5rem;
     margin: 1rem;
     border-radius: 15px;
@@ -60,7 +99,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-   /* padding: 15px 0;*/
+
     border-bottom: 1px solid #ccc;
     width: 100%;
     font-family: 'Roboto';
@@ -77,13 +116,15 @@ main {
 }
 
 .item-price {
-   /* font-size: 16px; */
+
     font-size: 1.2rem;
     font-weight: bold;
     text-align: right;
-    margin-right: 0.3rem;
-   /* margin-left: 10px; */
-}
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 3rem;
+  
+} */
 
 /* Totalpris */
 
