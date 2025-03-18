@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yum Yum Gimme Sum</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <script src="scripts/script.js"></script>
     <script type="module" src="scripts/script.js"></script>
 
     <!-- Länk till font awesome-iconerna -->
-    <script src="https://kit.fontawesome.com/1eafdca816.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1eafdca816.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Slut på font awesome-länk-->
 
     <!--Länk till typsnitt -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!--Slut på länk till typsnitt -->
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Logga -->
     <header>
-      <a href="index.html"><img class="logo" src="assets/logo/logo.png" alt=""></a>
+      <a href="index.html"
+        ><img class="logo" src="assets/logo/logo.png" alt=""
+      /></a>
     </header>
     <!--Slut på logga -->
+
     <div class="container">
-    <div class="welcome-wrapper">
-        <div class="image-grid">
-          <img src="assets/images/burger.svg" alt="Burger" />
-          <img src="assets/images/burritos.svg" alt="Burrito" />
-          <img src="assets/images/ramen.svg" alt="Ramen" />
+      <div class="welcome-wrapper">
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="assets/images/wonton1.svg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="assets/images/wonton2.svg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="assets/images/wonton3.svg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="assets/images/wonton4.svg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="assets/images/wonton5.svg" style="width: 100%" />
+          </div>
         </div>
 
         <!-- Welcome Section -->
@@ -42,7 +66,7 @@
           <h1>VÄLKOMMEN TILL</h1>
           <h2>YUM YUM GIMMIE SUM</h2>
         </section>
-       
+
         <!-- YYGS Quote -->
         <section class="quote-box">
           <p class="quote">
@@ -68,16 +92,17 @@
             <i class="fa-solid fa-location-dot"></i> HITTA VÅRA FOODTRUCKS
           </button>
         </a>
-        
+
         <a href="menu.html">
           <button class="order-btn">
             <i class="fa-solid fa-bowl-food"></i> CRAVINGS? BESTÄLL NU!
           </button>
         </a>
-        
+
         <a href="aboutus.html">
           <button class="story-btn">
-            <i class="fa-solid fa-truck-fast"></i> YUM YUM GIMMIE SUM – VÅR STORY
+            <i class="fa-solid fa-truck-fast"></i> YUM YUM GIMMIE SUM – VÅR
+            STORY
           </button>
         </a>
       </nav>
@@ -85,34 +110,39 @@
 
     <!-- Navigeringsmenyn -->
     <footer>
-        <section class="nav">
-            <div class="nav__Btn">
-                <a class="active" href="index.html">
-                    <i class="fa-solid fa-house"></i>
-                    Start</a>
-            </div>
-            <div class="nav__Btn">
-                <a href="menu.html">
-                    <i class="fa-solid fa-bowl-food"></i>
-                    Meny</a>
-            </div>
-            <div id="nav__cart">
-                <a href="cart.html"><img src="assets/images/kundvagn.png" alt=""></a>
-            </div>
-            <div class="nav__Btn">
-                <a href="findus.html">
-                    <i class="fa-solid fa-location-dot"></i>
-                    Hitta oss</a>
-            </div>
-            <div class="nav__Btn">
-              <a href="aboutus.html">
-                  <!--<i class="fa-solid fa-circle-user"></i>-->
-                  <i class="fa-solid fa-seedling"></i>
-                  Om oss</a>
-          </div>
-        </section>
+      <section class="nav">
+        <div class="nav__Btn">
+          <a class="active" href="index.html">
+            <i class="fa-solid fa-house"></i>
+            Start</a
+          >
+        </div>
+        <div class="nav__Btn">
+          <a href="menu.html">
+            <i class="fa-solid fa-bowl-food"></i>
+            Meny</a
+          >
+        </div>
+        <div id="nav__cart">
+          <a href="cart.html"
+            ><img src="assets/images/kundvagn.png" alt=""
+          /></a>
+        </div>
+        <div class="nav__Btn">
+          <a href="findus.html">
+            <i class="fa-solid fa-location-dot"></i>
+            Hitta oss</a
+          >
+        </div>
+        <div class="nav__Btn">
+          <a href="aboutus.html">
+            <!--<i class="fa-solid fa-circle-user"></i>-->
+            <i class="fa-solid fa-seedling"></i>
+            Om oss</a
+          >
+        </div>
+      </section>
     </footer>
     <!--Slut på navigeringsmeny-->
-</body>
-
+  </body>
 </html>
