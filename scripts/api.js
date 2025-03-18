@@ -16,11 +16,17 @@ async function getProducts() {
                 <section class="menu-item">
                 <div class="name-ingredients">
                     <h3 class="name-item">${item.name}</h3>
-                    <p>${item.description}</p>
+                    <p>${
+                        Array.isArray(item.ingredients) 
+                          ? item.ingredients.map(ingredient => 
+                              ingredient.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+                            ).join(', ') 
+                          : item.ingredients
+                      }</p>
                     <div class="menu-add">
-                    <img src="/assets/images/ta bort meny.png" alt="remove" class="remove-from-cart" data-index="${index}">
+                    <img src="/assets/images/ta bort meny.svg" alt="remove" class="remove-from-cart" data-index="${index}">
                     <p class="add-number">0</p>
-                    <img src="/assets/images/lägg till meny.png" alt="add" class="add-to-cart" data-index="${index}">
+                    <img src="/assets/images/lägg till meny.svg" alt="add" class="add-to-cart" data-index="${index}">
                 </div>
                 </div>
                 <div class="price"><h3>${item.price} SEK</h3></div>
@@ -40,9 +46,9 @@ async function getProducts() {
                     <h3 class="name-item">${item.name}</h3>
                     <p>${item.description}</p>
                     <div class="menu-add">
-                    <img src="/assets/images/ta bort meny.png" alt="remove" class="remove-from-cart" data-index="${data.items.indexOf(item)}">
+                    <img src="/assets/images/ta bort meny.svg" alt="remove" class="remove-from-cart" data-index="${data.items.indexOf(item)}">
                     <p class="add-number">0</p>
-                    <img src="/assets/images/lägg till meny.png" alt="add" class="add-to-cart" data-index="${data.items.indexOf(item)}">
+                    <img src="/assets/images/lägg till meny.svg" alt="add" class="add-to-cart" data-index="${data.items.indexOf(item)}">
                 </div>
                 </div>
                 <div class="price"><h3>${item.price} SEK</h3></div>
@@ -60,11 +66,10 @@ async function getProducts() {
                 <section class="menu-item">
                 <div class="name-ingredients">
                     <h3 class="name-item">${item.name}</h3>
-                    <p>${item.description}</p>
                     <div class="menu-add">
-                    <img src="/assets/images/ta bort meny.png" alt="remove" class="remove-from-cart" data-index="${data.items.indexOf(item)}">
+                    <img src="/assets/images/ta bort meny.svg" alt="remove" class="remove-from-cart" data-index="${data.items.indexOf(item)}">
                     <p class="add-number">0</p>
-                    <img src="/assets/images/lägg till meny.png" alt="add" class="add-to-cart" data-index="${data.items.indexOf(item)}">
+                    <img src="/assets/images/lägg till meny.svg" alt="add" class="add-to-cart" data-index="${data.items.indexOf(item)}">
                 </div>
                 </div>
                 <div class="price"><h3>${item.price} SEK</h3></div>

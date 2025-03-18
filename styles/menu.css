@@ -8,6 +8,7 @@
     z-index: 300;
     position: relative;
     margin-top:20px;
+    letter-spacing: 2px;
 }
 
 .menu-heading h1 {
@@ -45,7 +46,7 @@ main {
     padding: 100px 20px 20px 20px;
     position: relative;
     top:-50px;
-    height: calc(100vh - 400px);
+    height: calc(100vh - 250px);
     overflow-y: scroll;
     z-index: 0;
     margin: 0 20px;
@@ -156,4 +157,17 @@ margin-anchor {
 .checkout-btn:hover {
     background: #bd3f3f;
     cursor: pointer;
+}
+
+.add-to-cart {
+    width:30px;
+}
+
+.remove-from-cart {
+    width:30px;
+}
+
+.add-number {
+    font-size:22px;
+    margin-top:5px;
 }
