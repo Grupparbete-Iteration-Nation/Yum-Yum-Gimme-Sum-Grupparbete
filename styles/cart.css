@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-
+/* 🟥 Beställning Header */
 .cart-heading {
     background: #DF4A4A;
     border-radius: 20px 100px 20px 100px;
@@ -23,7 +23,7 @@ body {
     text-transform: uppercase;
 }
 
-
+/* 🟩 Grön Bakgrund */
 .cart-bg {
     background: #49938F;
     border-radius: 20px 100px 20px 50px;
@@ -32,118 +32,161 @@ body {
     margin: 0 20px;
 }
 
+/* 🏷️ Kategoriflikar */
 .cart-sub-menu {
     display:flex;
     justify-content:space-around;
-    align-items: space-around;
+    align-items: center;
     padding: 10px;
-    font-family: 'roboto';
+    font-family: 'Roboto';
     color: white;
     font-size: 24px;
 }
 
 .cart-sub-menu a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 .cart-sub-menu a:hover {
     text-decoration: underline;
 }
 
-
+/* 📦 Vit Box för Produkter */
 .cart-container {
     background: white;
     padding: 20px;
-    border-radius: 15px; 
+    border-radius: 15px;
     margin: 20px auto;
     width: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 4rem;
 }
 
-
+/* 🛒 Varje Produkt i Kundvagnen */
 .cart-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 15px 0;
-    border-bottom: 1px solid #ccc;
-    width: 100%;
-    font-family: 'Roboto';
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 40px;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.cart-item h3 {
-    color: #575757;
-    text-transform: uppercase;
-}
-
-.to-pay {
-    display:flex;
-    justify-content: space-between;
-}
-
+/* 📝 Produktnamn */
 .item-info {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 1;
+    justify-content: flex-start;
+    padding-left: 10px; 
+    text-align: left;
 }
 
-
-.item-price {
-    font-size: 16px;
+.item-info h3 {
+    font-size: 18px;
     font-weight: bold;
-    text-align: right;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
-    margin-left: 10px; 
-    margin-top: 0; 
 }
 
-
-.cart-total {
-    text-align: right;
-    background: white; 
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 20px; 
+/* 💰 Pris & Antal - Justering */
+.item-price {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .item-quantity {
     display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    text-align: right;
+}
+
+
+/* 🛍️ Totalpris */
+.cart-total {
+    display: flex;
+    justify-content: space-between;  /* Gör så att text och pris hamnar bredvid varandra */
     align-items: center;
-    gap: 6px;
-    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-top: 15px;
+    padding: 15px;  /* Justerar padding för att ge mer utrymme */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Återställer skuggningen */
+    border-radius: 10px; /* Återställer rundade kanter */
+    background: white; /* Återställer bakgrund */
+}
+
+.cart-total p {
+    font-size: 18px;  
+    color: black;  
+    font-weight: bold;
+    margin: 0; 
+    line-height: 1.5; /* Ökar höjden för att undvika klippt text */
+}
+
+.cart-total h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;  
+    margin: 0;
+    line-height: 2; /* Säkerställer att summan också har rätt höjd */
+}
+.cart-item__quantity img {
+    width: 22px;  /* Ändra storleken här */
+    height: 22px; /* Ändra storleken här */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.cart-item__quantity {
+    display: flex;
+    align-items: center;  /* Centrera vertikalt */
+    justify-content: center; /* Se till att allt är jämnt fördelat */
+    gap: 10px;  /* Ger mellanrum mellan knappar och siffra */
+}
+
+.cart-item__quantity span {
+    font-size: 18px;  /* Anpassa textstorlek */
+    font-weight: bold;
+    min-width: 30px; /* Se till att siffran inte hoppar */
+    text-align: center;
 }
 
 .item-quantity img {
-    /* width: 30px; 
-    height: 30px; */
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
 
 .item-quantity img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .item-quantity span {
     font-size: 16px;
     font-weight: bold;
-    min-width: 25px;
     text-align: center;
 }
 
+/* Slutför Köp-Knappen */
 .checkout-btn {
-    width:90%;
+    width: 90%;
     font-family: 'Ubuntu Mono';
     font-size: 18px;
-    border:none;
+    border: none;
     background: black;
     padding: 20px;
-    top:-50px;
     position: relative;
-    color:white;
+    color: white;
     font-weight: 600;
     border-radius: 20px 100px 20px 100px;
     text-transform: uppercase;
@@ -154,40 +197,10 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
+a {
+    text-decoration: none; /* Tar bort understrykning på alla länkar */
+}
 
 .checkout-btn:hover {
     background-color: black;
-}
-
-.item-info h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.item-info p {
-    font-size: 14px;
-    color: #666;
-}
-
-.item-price {
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-top: 0; 
-}
-
-/* Totalpris */
-.cart-total {
-    text-align: right;
-    margin-top: 20px;
-}
-
-.cart-total p {
-    font-size: 14px;
-    color: #666;
-}
-
-.cart-total h2 {
-    font-size: 22px;
-    margin-top: 5px;
 }
