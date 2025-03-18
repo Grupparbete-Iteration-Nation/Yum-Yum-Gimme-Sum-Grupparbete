@@ -24,7 +24,9 @@ main {
 .order-heading h1 {
     color: white;
     font-family: 'Bagel Fat One';
-    font-size: 25px;
+    /*font-size: 25px;*/
+    font-size: 1.3rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -35,46 +37,30 @@ main {
     position: relative;
     margin: 1rem;
     color:white;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+/* Kvitto */
+
 .cart-container {
     background: white;
-    padding: 20px;
-    border-radius: 15px;
+   /* padding: 20px; */
+    padding: 1.5rem;
     margin: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem; /*OBS! rem*/
-}
-
-.cart-sub-menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: space-around;
-    padding: 20px;
-    font-family: 'roboto';
-    color: white;
-    font-size: 24px;
-}
-
-.cart-sub-menu a {
-    text-decoration: none;
-    color: white;
-}
-
-.cart-sub-menu a:hover {
-    text-decoration: underline;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #0000001a;
+    margin-bottom: 2rem;
 }
 
 .cart-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 1rem;
+   /* padding: 15px 0;*/
     border-bottom: 1px solid #ccc;
     width: 100%;
     font-family: 'Roboto';
@@ -90,71 +76,32 @@ main {
     justify-content: space-between;
 }
 
-.item-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 1;
-}
-
-
 .item-price {
-    font-size: 16px;
+   /* font-size: 16px; */
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: right;
-    margin-left: 10px;
-    margin-top: 0;
+    margin-right: 0.3rem;
+   /* margin-left: 10px; */
 }
 
+/* Totalpris */
 
 .cart-total {
     text-align: right;
     background: white;
-    padding: 15px;
+   /* padding: 15px;
+    margin-top: 20px;*/
+    padding: 1rem;
+    font-family: "roboto";
+    font-size: 1.2rem;
     border-radius: 10px;
-    margin-top: 20px;
-}
-
-.item-quantity {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 5px;
-}
-
-.item-quantity span {
-    font-size: 16px;
-    font-weight: bold;
-    min-width: 25px;
-    text-align: center;
-}
-
-.item-info h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.item-price {
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-top: 0;
-}
-
-/* Totalpris */
-.cart-total {
-    text-align: right;
-    margin-top: 20px;
 }
 
 .cart-total p {
-    font-size: 14px;
+    /*font-size: 14px; */
+    font-size: 1.3rem;
     color: #666;
-}
-
-.cart-total h2 {
-    font-size: 22px;
-    margin-top: 5px;
 }
 
 .order-information__receipt {
@@ -214,16 +161,24 @@ main {
     margin-right: 0.3rem;
 }
 
-/* Buttons */
+.remove-from-cart,
+.add-to-cart{
+    display: none;
+}
+
+/* Hitta oss-knappen  */
 .buttons a {
     text-decoration: none;
     display: block;
+    margin-bottom: 7rem;
 }
 
 .buttons a button {
     appearance: none;
     border: none;
     padding: 12px;
+    margin-left: 1rem;
+    margin-right: 1rem;
     font-family: 'Ubuntu Mono';   
     font-size: 16px;
     border-radius: 5px;
@@ -231,9 +186,7 @@ main {
     font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    justify-content: center; 
 }
 
 .buttons a button .fa-solid {

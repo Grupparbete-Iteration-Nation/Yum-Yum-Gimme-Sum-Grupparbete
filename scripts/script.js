@@ -1,6 +1,7 @@
 console.log('Hello World!')
 
 
+
 //Karusell-funktion
 let slideIndex = 0;
 showSlides();
@@ -16,3 +17,8 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 4000);
 } 
+
+import { randomizeOrderNumber } from "./orderconfirmation.js"
+
+randomizeOrderNumber()
+

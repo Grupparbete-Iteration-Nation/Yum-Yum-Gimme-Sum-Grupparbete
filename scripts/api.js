@@ -93,6 +93,9 @@ async function getProducts() {
         if (index !== -1) {
             productCounts[index] = item.count; // Uppdatera räknaren för denna produkt
             numberDisplays[index].textContent = item.count; // Uppdatera visningen
+            if (item.count > 0) {
+                numberDisplays[index].classList.add('number-in-cart'); // Lägg till klassen om produkten finns i kundvagnen
+            }
         }
     });
 
@@ -103,6 +106,11 @@ async function getProducts() {
         button.addEventListener('click', () => {
             productCounts[index]++;
             numberDisplays[index].textContent = productCounts[index];
+
+            // Lägg till klassen om antalet är större än 0
+            if (productCounts[index] > 0) {
+                numberDisplays[index].classList.add('number-in-cart');
+            }
 
             // Uppdatera localStorage när produkten läggs till
             if (productCounts[index] === 1) {
@@ -119,8 +127,9 @@ async function getProducts() {
                 productCounts[index]--;
                 numberDisplays[index].textContent = productCounts[index];
 
-                // Ta bort produkten från localStorage om antalet är 0
+                // Ta bort klassen om antalet är 0
                 if (productCounts[index] === 0) {
+                    numberDisplays[index].classList.remove('number-in-cart');
                     removeFromLocalStorage(data.items[index]);
                 } else {
                     updateLocalStorage(data.items[index], productCounts[index]);
