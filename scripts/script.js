@@ -1,3 +1,4 @@
+
 console.log('Hello World!')
 
 
@@ -18,7 +19,4 @@ function showSlides() {
   setTimeout(showSlides, 4000);
 } 
 
-import { randomizeOrderNumber } from "./orderconfirmation.js"
-
-randomizeOrderNumber()
 
