@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <h3 class="cart-item__name">${item.name}</h3>
                 <div class="cart-item__price">${item.price} SEK</div>
                 <div class="cart-item__quantity">
-                    <img src="/assets/images/ta bort meny.png" alt="Minska antal" class="remove-from-cart" data-index="${index}">
+                    <img src="/assets/images/Ta bort meny.svg" alt="Minska antal" class="remove-from-cart" data-index="${index}">
                     <span>${item.count}</span>
-                    <img src="/assets/images/lägg till meny.png" alt="Öka antal" class="add-to-cart" data-index="${index}">
+                    <img src="/assets/images/Lägg till meny.svg" alt="Öka antal" class="add-to-cart" data-index="${index}">
                 </div>
             </div>
         `;
