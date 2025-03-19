@@ -58,6 +58,7 @@
     font-family: "Bagel Fat One", system-ui;
     font-size: 22px;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 
 
@@ -67,6 +68,7 @@
     font-weight: bold;
     color: #DF4A4A;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 
@@ -121,6 +123,7 @@
     color: #fff;
     font-family: "Bagel Fat One", system-ui;
     font-size: 24px;
+    letter-spacing: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
