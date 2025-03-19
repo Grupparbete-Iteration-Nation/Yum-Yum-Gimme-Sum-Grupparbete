@@ -4,19 +4,23 @@ console.log('Hello World!')
 
 
 //Karusell-funktion
-let slideIndex = 0;
-showSlides();
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.location.pathname.includes("index.html") || window.location.pathname === "/") {
+    let slideIndex = 0;
+    showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 4000);
+    }
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 4000);
-} 
+});
 
 
