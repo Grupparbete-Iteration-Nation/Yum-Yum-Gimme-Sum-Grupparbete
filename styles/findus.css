@@ -75,6 +75,28 @@
   border-radius: 8px 8px 15px 15px;
 }
 
+.find__map-closed {
+  text-align: center;
+  font-family: Roboto;
+  color: #575757;
+  padding: 15px;
+}
+
+.hours ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.hours li {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  font-family: "Roboto";
+  font-weight: bold;
+  margin: 0 auto;
+}
+
 /* Kommande platser section */
 .find__future-card {
   display: flex;
