@@ -13,6 +13,16 @@ Grupparbete i kursen Arbeta Agilt
 
 [Gruppreflektioner](https://docs.google.com/document/d/1dZOZ03XtH-oZvBmlbERdcyfDIEI5RqptJ-tlOl9lfFQ/edit?tab=t.0#heading=h.h0n8ee8xccys)
 
+## Figma
+
+[Designskiss](https://www.figma.com/design/bmv23TYUBVWuSL8AL7dLKn/Grupparbete---Yum-Yum-Gimme-sum?node-id=0-1&t=kqlhaAcLVFViLkln-1)
+
+## Google-formulär för användartester
+
+[Frågor till användartester](https://docs.google.com/forms/d/e/1FAIpQLSfCUD-xVXcpl9F1rHNaly04VCUGzBBclbbvQhEo90DK8osDeQ/viewform?usp=header)
+
+[Svar på användartester](https://docs.google.com/forms/d/10D5F3Cw6Fm9YL5fDikxE7BBC3wTMAXSJ0Pz4YSw693U/edit?hl=sv#responses)
+
 ## Resurser
 
 * Ikoner från [Font Awesome](https://fontawesome.com/)
