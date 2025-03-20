@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yum Yum Gimme Sum</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/script.js"></script>
-    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="stylesheet" href="./styles/orderconfirmation.css">
     <script type="module" src="scripts/script.js"></script>
+    <script type="module" src="scripts/eta.js"></script>
+    <script type="module" src="scripts/orderconfirmation.js"></script>
     <!-- Länk till font awesome-iconerna -->
     <script src="https://kit.fontawesome.com/1eafdca816.js" crossorigin="anonymous"></script>
     <!-- Slut på font awesome-länk-->
@@ -28,45 +29,50 @@
     </header>
     Slut på logga -->
 
-    <!-- <h1>Cart</h1> -->
-    <section class="cart-header">
-        <div class="cart-bg">
-            <div class="cart-heading">
-                <h1>Beställning</h1>
-            </div>
-            <nav class="cart-sub-menu">
-                <a href="/menu.html"><h6>WONTONS</h6></a>
-                <a href="/menu.html"><h6>DIP</h6></a>
-                <a href="/menu.html"><h6>DRYCK</h6></a>
-            </nav>
-        </div>
-    </section>
-    
+    <main>
 
-    <main class="cart-container" id="cart-container">
-      <!--  <div class="cart-item">
-            <div class="item-info">
-                <h2>KARLSTAD</h2>
-                <p>En god friterad wonton med smaker från de värmländska skogarna.</p>
-                <div class="item-quantity">
-                    <img src="/assets/images/Ta bort meny.png" alt="Minska antal" class="quantity-btn minus">
-                    <span>2</span>
-                    <img src="/assets/images/Lägg till meny.png" alt="Öka antal" class="quantity-btn plus">
+        <section class="order-header">
+            <div class="order-bg">
+                <div class="order-heading">
+                    <h1>Tack för din beställning!</h1>
                 </div>
-            </div>
-            <div class="item-price">9 SEK</div>
-        </div>
-    
-        <div class="cart-total">
-            <p>TOTALT</p>
-            <h2>139,00 SEK</h2>
-            <p>(inkl. moms och avgifter)</p>
-        </div>
-        -->
-    </main>
+                <div class="order-confirmation">
+                    <h2>Din mat tillagas!</h2>
+                    <div class="order-confirmation__ETA">
+                        <i class="fa-solid fa-clock"></i>
+                        <h3>Uppskattad tid: <span class="eta"></span></h3>
+                    </div>
+                    <h2 class="order-confirmation__number">Ditt ordernummer är: <span class="order-number"></span></h2>
+                </div>
 
-        <a href="orderconfirmation.html"><button class="checkout-btn">Slutför köp</button></a>
-    <!-- </main> -->
+                <!--Om det går vill jag ha kvittot här-->
+
+                
+                
+                <div class="order-information__payment">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Du betalar maten när du hämtar den</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <div class="cart-container" id="cart-container">
+            <section class="order-information">
+                <h2 class="order-information__receipt">Kvitto:</h2>
+            </section>
+        </div>
+
+        <nav class="buttons">
+            <a href="findus.html">
+                <button class="location-btn">
+                    <i class="fa-solid fa-location-dot"></i> HITTA VÅRA FOODTRUCKS
+                </button>
+            </a>
+        </nav>
+
+
+    </main>
     <!-- Navigeringsmenyn -->
     <footer>
         <section class="nav">

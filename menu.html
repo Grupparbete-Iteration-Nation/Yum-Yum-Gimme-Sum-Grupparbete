@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yum Yum Gimme Sum</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/menu.css">
     <script src="scripts/script.js"></script>
     <script type="module" src="scripts/script.js"></script>
+    <script type="module" src="/scripts/api.js"></script>
     <!-- Länk till font awesome-iconerna -->
     <script src="https://kit.fontawesome.com/1eafdca816.js" crossorigin="anonymous"></script>
     <!-- Slut på font awesome-länk-->
@@ -21,14 +23,42 @@
 </head>
 
 <body>
-    <!-- Logga -->
+    <!-- Logga
     <header>
-        <img class="logo" src="assets/logo/logo.png" alt="">
+        <a href="index.html"><img class="logo" src="assets/logo/logo.png" alt=""></a>
     </header>
-    <!--Slut på logga -->
+    Slut på logga -->
+    <section class="menu-bg">
+        <section id="menu-heading" class="menu-heading">
+            <h1>Meny</h1>
+        </section>
+        <section id="sub-menu" class="sub-menu">
+            <a href="#wontons"><h6 class="active">WONTONS</h6></a>
+            <a href="#dip"><h6>DIP</h6></a>
+            <a href="#dryck"><h6>DRYCK</h6></a>
+        </section>
+    </section>
+    <!---->
+    <main>
 
-    <h1>Meny</h1>
+        <section class="main-content" id="main-content">
 
+    </section>
+
+
+    </main>
+    <section>
+        <a href="cart.html" class="checkout-btn">Till kassan</a>
+    </section>
+    <!--
+    
+    <section>
+       <a href="cart.html"> <button class="checkout-btn" id="">Till kassan</button> </a>
+    </section>
+feature-api-meny-->
+
+
+</body>
     <!-- Navigeringsmenyn -->
     <footer>
         <section class="nav">
@@ -38,22 +68,24 @@
                     Start</a>
             </div>
             <div class="nav__Btn">
-                <a href="menu.html">
+                <a class="active" href="menu.html">
                     <i class="fa-solid fa-bowl-food"></i>
                     Meny</a>
             </div>
             <div id="nav__cart">
-                <a href="cart.html"><img src="assets/images/kundvagn.png" alt=""></a>
+                <a href="cart.html"><img src="assets/images/kundvagn.png" alt="kundvagn"></a>
             </div>
             <div class="nav__Btn">
                 <a href="findus.html">
                     <i class="fa-solid fa-location-dot"></i>
                     Hitta oss</a>
             </div>
+
             <div class="nav__Btn">
-                <a href="profile.html">
-                    <i class="fa-solid fa-circle-user"></i>
-                    Profil</a>
+                <a href="aboutus.html">
+                    <!--<i class="fa-solid fa-circle-user"></i>-->
+                    <i class="fa-solid fa-seedling"></i>
+                    Om oss</a>
             </div>
         </section>
     </footer>

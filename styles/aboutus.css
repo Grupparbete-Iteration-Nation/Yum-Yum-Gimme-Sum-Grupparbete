@@ -43,3 +43,43 @@
 .presentation__img {
     width: 100%;
 }
+
+/* Buttons index.html */
+
+.buttons a {
+    text-decoration: none;
+    display: block;
+}
+
+.buttons a button {
+    appearance: none;
+    border: none;
+    padding: 12px;
+    font-family: 'Ubuntu Mono';   
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.buttons a button .fa-solid {
+    font-size: 1rem;
+    color: white;
+    margin-right: 8px;
+}
+
+.order-btn {
+    background: #49938F;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.buttons a button:focus, 
+.buttons a button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}

@@ -1,63 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yum Yum Gimme Sum</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <script src="scripts/script.js"></script>
     <script type="module" src="scripts/script.js"></script>
-    <!-- Länk till font awesome-iconerna -->
-    <script src="https://kit.fontawesome.com/1eafdca816.js" crossorigin="anonymous"></script>
-    <!-- Slut på font awesome-länk-->
-    <!--Länk till typsnitt -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <!--Slut på länk till typsnitt -->
-</head>
 
-<body>
+    <!-- Länk till font awesome-iconerna -->
+    <script
+      src="https://kit.fontawesome.com/1eafdca816.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Slut på font awesome-länk-->
+
+    <!--Länk till typsnitt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Slut på länk till typsnitt -->
+  </head>
+
+  <body>
     <!-- Logga -->
     <header>
-        <img class="logo" src="assets/logo/logo.png" alt="">
+      <a href="index.html"
+        ><img class="logo" src="assets/logo/logo.png" alt=""
+      /></a>
     </header>
     <!--Slut på logga -->
 
-    <h1>Index</h1>
+    <div class="container">
+      <div class="welcome-wrapper">
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="assets/images/wonton1.svg" alt="Wontons i kryddig buljong med chili och koriander." style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="assets/images/wonton2.svg" alt="Wontons i buljong med grönsaker." style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="assets/images/wonton3.svg" alt="Ångade wontons i bambukorg med chiliolja." style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="assets/images/wonton4.svg" alt="Kokta wontons med sojasås och grön lök." style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="assets/images/wonton5.svg" alt="Stekta wontons på svart tallrik, toppade med örter." style="width: 100%" />
+          </div>
+        </div>
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+          <h1>VÄLKOMMEN TILL</h1>
+          <h2>YUM YUM GIMMIE SUM</h2>
+        </section>
+
+        <!-- YYGS Quote -->
+        <section class="quote-box">
+          <p class="quote">
+            "Street food som förändrar ditt liv – en tugga i taget."
+          </p>
+        </section>
+      </div>
+
+      <!-- Opening hours -->
+      <section class="hours">
+        <h3>ÖPPETTIDER</h3>
+        <ul>
+          <li>Mån - Tor <span>11-20</span></li>
+          <li>Fre - Lör <span>11-23</span></li>
+          <li>Sön <span>11-20</span></li>
+        </ul>
+      </section>
+
+      <!-- location, order and about us buttons -->
+      <nav class="buttons">
+        <a href="findus.html">
+          <button class="location-btn">
+            <i class="fa-solid fa-location-dot"></i> HITTA VÅRA FOODTRUCKS
+          </button>
+        </a>
+
+        <a href="menu.html">
+          <button class="order-btn">
+            <i class="fa-solid fa-bowl-food"></i> CRAVINGS? BESTÄLL NU!
+          </button>
+        </a>
+
+        <a href="aboutus.html">
+          <button class="story-btn">
+            <i class="fa-solid fa-truck-fast"></i> YUM YUM GIMMIE SUM – VÅR
+            STORY
+          </button>
+        </a>
+      </nav>
+    </div>
 
     <!-- Navigeringsmenyn -->
     <footer>
-        <section class="nav">
-            <div class="nav__Btn">
-                <a href="index.html">
-                    <i class="fa-solid fa-house"></i>
-                    Start</a>
-            </div>
-            <div class="nav__Btn">
-                <a href="menu.html">
-                    <i class="fa-solid fa-bowl-food"></i>
-                    Meny</a>
-            </div>
-            <div id="nav__cart">
-                <a href="cart.html"><img src="assets/images/kundvagn.png" alt=""></a>
-            </div>
-            <div class="nav__Btn">
-                <a href="findus.html">
-                    <i class="fa-solid fa-location-dot"></i>
-                    Hitta oss</a>
-            </div>
-            <div class="nav__Btn">
-                <a href="profile.html">
-                    <i class="fa-solid fa-circle-user"></i>
-                    Profil</a>
-            </div>
-        </section>
+      <section class="nav">
+        <div class="nav__Btn">
+          <a class="active" href="index.html">
+            <i class="fa-solid fa-house"></i>
+            Start</a
+          >
+        </div>
+        <div class="nav__Btn">
+          <a href="menu.html">
+            <i class="fa-solid fa-bowl-food"></i>
+            Meny</a
+          >
+        </div>
+        <div id="nav__cart">
+          <a href="cart.html"
+            ><img src="assets/images/kundvagn.png" alt="kundvagn"
+          /></a>
+        </div>
+        <div class="nav__Btn">
+          <a href="findus.html">
+            <i class="fa-solid fa-location-dot"></i>
+            Hitta oss</a
+          >
+        </div>
+        <div class="nav__Btn">
+          <a href="aboutus.html">
+            <!--<i class="fa-solid fa-circle-user"></i>-->
+            <i class="fa-solid fa-seedling"></i>
+            Om oss</a
+          >
+        </div>
+      </section>
     </footer>
     <!--Slut på navigeringsmeny-->
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,179 @@
+/* Menu css */
+
+.menu-heading {
+    background: #DF4A4A;
+    border-radius: 20px 100px 20px 100px;
+    text-align: center;
+    padding: 10px;
+    z-index: 300;
+    position: relative;
+    margin-top:20px;
+    letter-spacing: 2px;
+}
+
+.menu-heading h1 {
+    color: white;
+    font-family: 'Bagel Fat One';
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.menu-bg {
+    background: #49938F;
+    border-radius: 20px 100px 20px 50px;
+    z-index: 100;
+    position: relative;
+    margin: 0 20px;
+}
+
+.sub-menu {
+    display:flex;
+    justify-content:space-around;
+    align-items: space-around;
+    padding: 10px;
+    font-family: 'roboto';
+    color: white;
+    font-size: 24px;
+}
+
+.sub-menu a {
+    text-decoration: none;
+    color:white;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 100px 20px 20px 20px;
+    position: relative;
+    top:-50px;
+    height: calc(100vh - 250px);
+    overflow-y: scroll;
+    z-index: 0;
+    margin: 0 20px;
+    border-radius: 0 0 20px 0  ;
+}
+
+.main-content {
+    overflow-y: scroll;
+}
+
+.menu-section {
+    font-family: 'Roboto';
+    color: #49938F;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.menu-item {
+    display:flex;
+    font-family: 'Roboto';
+    justify-content: space-between;
+}
+
+.menu-item h3{
+    font-size: 22px;
+    color: #575757;
+}
+
+.name-item {
+    font-size: 22px;
+    color: #575757;
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.price-item {
+    font-size: 22px;
+    color: #575757;
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.item-description {
+    font-family: Roboto;
+    color: #575757;
+}
+
+margin-anchor {
+    margin-bottom:20px;
+}
+
+#wontons {
+    scroll-margin-top: 100px;
+}
+
+#dip {
+    scroll-margin-top: 100px;
+}
+
+#dryck {
+    scroll-margin-top: 100px;
+}
+
+.menu-add {
+    display:flex;
+    margin-top:5px;
+}
+
+.menu-add p {
+    font-size:18px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+.name-ingredients {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size:22px;
+}
+
+.checkout-btn {
+    width:90%;
+    font-family: 'Ubuntu Mono';
+    font-size: 18px;
+    border:none;
+    background: #DF4A4A;
+    padding: 20px;
+    top:-40px;
+    position: relative;
+    color:white;
+    font-weight: 600;
+    border-radius: 20px 100px 20px 100px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.checkout-btn:hover {
+    background: #bd3f3f;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    width:30px;
+}
+
+.remove-from-cart {
+    width:30px;
+}
+
+.add-number {
+    font-size:22px;
+    margin-top:5px;
+}
+
+.number-in-cart {
+    font-weight: 900;
+    color:#49938F;
+}
+

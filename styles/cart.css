@@ -1,0 +1,211 @@
+body {
+    background-color: #F5E3C4; 
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.cart-heading {
+    background: #DF4A4A;
+    border-radius: 20px 100px 20px 100px;
+    text-align: center;
+    padding: 10px;
+    z-index: 300;
+    position: relative;
+    margin-top: 20px;
+}
+
+.cart-heading h1 {
+    color: white;
+    font-family: 'Bagel Fat One';
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.cart-bg {
+    background: #49938F;
+    border-radius: 20px 100px 20px 50px;
+    z-index: 100;
+    position: relative;
+    margin: 0 20px;
+}
+
+
+.cart-sub-menu {
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Roboto';
+    color: white;
+    font-size: 24px;
+    /* margin-bottom: 1rem; */
+}
+
+.cart-sub-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.cart-sub-menu a:hover {
+    text-decoration: underline;
+}
+
+
+.cart-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px auto;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+
+.cart-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 35px;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Roboto';
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.cart-item h3 {
+    font-size: 18px;
+}
+
+.item-info {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px; 
+    text-align: left;
+}
+
+.item-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.item-price {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.item-quantity {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    text-align: right;
+}
+
+
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-top: 30px;
+    padding: 15px;  
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    background: white; 
+}
+
+.cart-total p {
+    font-size: 18px;  
+    font-family: 'Roboto';
+    color: black;  
+    font-weight: bold;
+    margin: 0; 
+    line-height: 1.5; 
+}
+
+.cart-total h3 {
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: black;  
+    margin: 0;
+    line-height: 2; 
+}
+.cart-item__quantity img {
+    width: 30px;  
+    height: 30px; 
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.cart-item__quantity {
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    
+}
+
+.cart-item__quantity span {
+    font-size: 18px;  
+    font-weight: bold;
+    min-width: 30px; 
+    text-align: center;
+}
+
+.item-quantity img {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.item-quantity img:hover {
+    transform: scale(1.1);
+}
+
+.item-quantity span {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.checkout-btn {
+    width: 90%;
+    font-family: 'Ubuntu Mono';
+    font-size: 18px;
+    border: none;
+    background: black;
+    padding: 20px;
+    position: relative;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px 100px 20px 100px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+}
+a {
+    text-decoration: none; 
+}
+
+.checkout-btn:hover {
+    background-color: black;
+}

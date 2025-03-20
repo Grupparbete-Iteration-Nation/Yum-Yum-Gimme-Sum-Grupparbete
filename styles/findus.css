@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .find__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  height: auto;
+  overflow: auto;
+  overflow-y: auto;
+  padding-top: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+ */
+.find__logo {
+  display: block;
+  max-width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.find__main-container {
+  width: 85%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Map section */
+.find__map-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #df4a4a;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 100px 474px 0px 474px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0px;
+}
+
+.find__map-heading {
+  font-family: Bagel Fat One;
+  color: #ffffff;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+.find__map-outline {
+  background-color: #d7c7b8;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px 50px 15px 15px;
+}
+
+.find__map-frame {
+  overflow: hidden;
+  z-index: 1;
+  padding-top: 55px;
+  margin: 10px;
+}
+
+.find__map-frame iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px 8px 15px 15px;
+}
+
+.find__map-closed {
+  text-align: center;
+  font-family: Roboto;
+  color: #575757;
+  padding: 15px;
+}
+
+.hours ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.hours li {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  font-family: "Roboto";
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+/* Kommande platser section */
+.find__future-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #df4a4a;
+  padding: 15px;
+  margin: 15px 0px 15px;
+  border-radius: 100px 474px 0px 474px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.find__future-heading {
+  font-family: Bagel Fat One;
+  color: #ffffff;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+.find__location-list {
+  margin-bottom: 150px;
+}
+
+.find__location-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  font-family: Roboto;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  gap: 15px;
+}
+
+.find__location-pin {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.find__location-info {
+  flex: 1;
+  color: #575757;
+}
+
+.find__weekday {
+  color: #575757;
+}
+
+.find__location-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.find__card-button {
+  background-color: #49938f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: 0.3s;
+  text-wrap: nowrap;
+}
+
+.find__card-button:hover {
+  background-color: #327c78;
+}

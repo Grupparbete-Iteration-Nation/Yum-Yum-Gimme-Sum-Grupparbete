@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -22,11 +22,11 @@
 </head>
 
 <body>
-      <!-- Logga -->
-      <header>
-        <img class="logo" src="assets/logo/logo.png" alt="">
+    <!-- Logga
+    <header>
+        <a href="index.html"><img class="logo" src="assets/logo/logo.png" alt=""></a>
     </header>
-    <!--Slut på logga -->
+    Slut på logga -->
 
     <!--Om oss -->
     <section class="presentation">
@@ -47,7 +47,19 @@
                 så att vår mat alltid finns i närheten av dig.
                 Låt vår mat förändra ditt liv - en tugga i taget!</p>
         </div>
+
+        
+        <nav class="buttons">
+            <a href="menu.html">
+                <button class="order-btn">
+                    <i class="fa-solid fa-bowl-food"></i> CRAVINGS? BESTÄLL NU!
+                </button>
+            </a>
+        </nav>
+        
+
     </section>
+
     <!--Slut på Om oss-->
 
     <!-- Navigeringsmenyn -->
@@ -64,7 +76,7 @@
                     Meny</a>
             </div>
             <div id="nav__cart">
-                <a href="cart.html"><img src="assets/images/kundvagn.png" alt=""></a>
+                <a href="cart.html"><img src="assets/images/kundvagn.png" alt="kundvagn"></a>
             </div>
             <div class="nav__Btn">
                 <a href="findus.html">
@@ -72,9 +84,11 @@
                     Hitta oss</a>
             </div>
             <div class="nav__Btn">
-                <a href="profile.html">
-                    <i class="fa-solid fa-circle-user"></i>
-                    Profil</a>
+                <a class="active" href="aboutus.html">
+                    <!--<i class="fa-solid fa-circle-user"></i>-->
+                    <i class="fa-solid fa-seedling"></i>
+                    Om oss</a>
+            </div>
             </div>
         </section>
     </footer>
