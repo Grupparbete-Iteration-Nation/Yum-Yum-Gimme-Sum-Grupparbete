@@ -21,7 +21,7 @@ Grupparbete i kursen Arbeta Agilt
 
 [Frågor till användartester](https://docs.google.com/forms/d/e/1FAIpQLSfCUD-xVXcpl9F1rHNaly04VCUGzBBclbbvQhEo90DK8osDeQ/viewform?usp=header)
 
-[Svar på användartester](https://docs.google.com/forms/d/10D5F3Cw6Fm9YL5fDikxE7BBC3wTMAXSJ0Pz4YSw693U/edit?hl=sv#responses)
+[Svar på användartester]([https://docs.google.com/forms/d/10D5F3Cw6Fm9YL5fDikxE7BBC3wTMAXSJ0Pz4YSw693U/edit?hl=sv#responses](https://docs.google.com/spreadsheets/d/1r09ur7yMROser0mYbNzUgmbxFeaakkzMBTHd3Bq7yH4/edit?resourcekey=&gid=1154095567#gid=1154095567)
 
 ## Resurser
 
